@@ -8,15 +8,17 @@ class Patient {
     int age;
     string disease;
 
-    void input(){
+     void input(){
         cout<<"Enter Patient ID: ";
         cin>>id;
+        cin.ignore(); // clear leftover newline
         cout<<"Enter Patient Name: ";
-        cin>>name;
+        getline(cin, name); // allows spaces
         cout<<"Enter Patient Age: ";
         cin>>age;
+        cin.ignore(); // clear leftover newline
         cout<<"Enter Disease: ";
-        cin>>disease;
+        getline(cin, disease); // allows spaces too
     }
 
     void display(){
@@ -67,4 +69,5 @@ int main(){
     }
     while(choice!=3);
     return 0;
+
 }
