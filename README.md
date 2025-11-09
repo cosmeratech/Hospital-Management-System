@@ -43,4 +43,3 @@ g++ HospitalManagementSystem.cpp -o HospitalManagementSystem
 
 - Maximum capacity: 10 patients
 - Data is stored in memory (not persisted to disk)
-- Patient names with spaces should be entered without spaces (uses `cin` for input)
